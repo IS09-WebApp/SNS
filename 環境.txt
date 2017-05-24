@@ -1,0 +1,18 @@
+使用言語
+・PHP7.0（Hack）
+・HTML
+・JavaScript（もしかしたら）
+各自、要導入
+開発環境
+・PHPStorm or Sublime Text 3
+・Maria DB
+・XAMPP
+・pencil(画面設計)
+デザイン関連
+・Bootstrap
+・Initializer
+・astah
+セキュリティ（ツール）
+・skipfish
+・mod_dosdetector
+・DenyHost
