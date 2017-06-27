@@ -1,0 +1,61 @@
+create database db1;
+
+use db1;
+
+create table college(
+	id varchar(255) primary key,
+	name varchar(255)
+);
+
+create table teacher(
+	id varchar(255) primary key,
+	name varchar(255),
+	sex enum('male', 'female') default 'male'
+);
+
+create table class(
+	id varchar(255) primary key,
+	name varchar(255),
+	teacher varchar(255),
+	foreign key(teacher) references teacher(id)
+);
+
+create table student(
+	id varchar(255) primary key,
+	name varchar(255),
+	email varchar(255) unique,
+	password varchar(32) not null,
+	sex enum('male', 'female') default 'male',
+	class varchar(255),
+	college varchar(255),
+	foreign key(class) references class(id),
+	foreign key(college) references college(id)
+);
+
+create table classchat(
+	id varchar(255) primary key,
+	classid varchar(255),
+	name varchar(255),
+	reader varchar(255),
+	foreign key(reader) references class(teacher),
+	foreign key(classid) references class(id)
+);
+
+create table chat(
+	id varchar(255) primary key,
+	name varchar(255) not null,
+	reader varchar(255),
+	res int(100) default 0,
+	unique(name),
+	foreign key(reader) references student(id)
+);
+
+create table info(
+	id varchar(255),
+	date date,
+	article date
+);
+
+create table tag(
+	name varchar(255) unique
+);
