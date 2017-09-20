@@ -60,29 +60,43 @@ $db['dbname'] = "db1";
     ?>
 <!doctype html>
 <html>
-    <head>
-            <meta charset="UTF-8">
-        <title>ログイン</title>
-    </head>
-<body>
-<h1>ログイン画面</h1>
-<form id="loginForm" name="loginForm" action="" method="POST">
-    <fieldset>
-        <legend>ログインフォーム</legend>
-        <div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
-        <label for="userid">ユーザーID</label><input type="text" id="userid" name="userid" placeholder="ユーザーIDを入力" value="<?php if (!empty($_POST["userid"])) {echo htmlspecialchars($_POST["userid"], ENT_QUOTES);} ?>">
-        <br>
-        <label for="password">パスワード</label><input type="password" id="password" name="password" value="" placeholder="パスワードを入力">
-        <br>
-        <input type="submit" id="login" name="login" value="ログイン">
-    </fieldset>
-</form>
-<br>
-<form action="SignUp.php">
-    <fieldset>
-        <legend>新規登録フォーム</legend>
-        <input type="submit" value="新規登録">
-    </fieldset>
-</form>
+<head>
+    <link href='./css/login.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link href="./css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body background="#">
+<link href="./css/login.css" rel="stylesheet" type="text/css">
+<div class="container">
+    <div class="row login_box">
+        <div class="col-md-12 col-xs-12" align="center">
+<!--時間表示            <div class="line"><h3>12 : 30 AM</h3></div> -->
+            <div class="outter"><img src="./toonf.jpg" class="image-circle"/></div>   
+            <h1>ようこそ</h1>
+            <span>なんか</span>
+        </div>
+        
+        <div class="col-md-12 col-xs-12 login_control">
+            <from action="#"><!--ログイン後のリンク先指定-->
+                <div class="control">
+                    <div class="label">Email Address</div>
+                    <input type="text" placeholder="ゆい" class="form-control" value=""/>
+                </div>
+                
+                <div class="control">
+                     <div class="label">Password</div>
+                    <input type="password" placeholder="かおり" class="form-control" value=""/>
+                </div>
+                <div align="center">
+                     <button class="btn btn-orange">LOGIN</button>
+                </div>
+            </from>
+            <p style="text-align:right"> 
+                <a href="#" STYLE="text-decoration:blink"> <font color="black" >パスワードを忘れた場合</font></a>
+            </style>        
+        </div>
+    </div>
+</div>
 </body>
 </html>
