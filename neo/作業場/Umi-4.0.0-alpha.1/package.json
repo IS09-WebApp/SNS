@@ -1,0 +1,40 @@
+{
+  "name": "Umi",
+  "version": "4.0.0-alpha.1",
+  "description": "Umi is a fork of Honoka which is a Bootstrap theme.",
+  "author": "SAKATA Sinji",
+  "website": "https://nkmr6194.github.io/Umi/",
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test",
+    "start": "grunt build",
+    "server": "grunt server",
+    "release": "grunt package",
+    "postcss": "postcss --config postcss.js --replace dist/css/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NKMR6194/Umi.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.3.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csscomb": "^3.1.1",
+    "grunt-exec": "^1.0.1",
+    "grunt-scss-lint": "^0.5.0",
+    "grunt-text-replace": "^0.4.0",
+    "postcss-cli": "^2.6.0",
+    "postcss-flexbugs-fixes": "^2.0.0"
+  }
+}

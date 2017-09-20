@@ -1,0 +1,445 @@
+@charset 'UTF-8';
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.btn-twitter .fa.fa-lg,
+.btn-facebook .fa.fa-lg
+{
+    margin-right: 2px;
+
+    vertical-align: -1px;
+}
+
+.btn-twitter
+{
+    color: #fff;
+    border-color: #4ca7ed;
+    background-color: #55acee;
+}
+.btn-twitter:hover
+{
+    color: #fff;
+    border-color: #178ce5;
+    background-color: #2795e9;
+}
+.btn-twitter:focus,
+.btn-twitter.focus
+{
+    color: #fff;
+    border-color: #178ce5;
+    background-color: #2795e9;
+}
+.btn-twitter:active,
+.btn-twitter.active,
+.open > .btn-twitter.dropdown-toggle
+{
+    color: #fff;
+    border-color: #178ce5;
+    background-color: #2795e9;
+    background-image: none;
+}
+.btn-twitter:active:hover,
+.btn-twitter:active:focus,
+.btn-twitter:active.focus,
+.btn-twitter.active:hover,
+.btn-twitter.active:focus,
+.btn-twitter.active.focus,
+.open > .btn-twitter.dropdown-toggle:hover,
+.open > .btn-twitter.dropdown-toggle:focus,
+.open > .btn-twitter.dropdown-toggle.focus
+{
+    color: #fff;
+    border-color: #1167a8;
+    background-color: #1583d7;
+}
+.btn-twitter.disabled:focus,
+.btn-twitter.disabled.focus,
+.btn-twitter:disabled:focus,
+.btn-twitter:disabled.focus
+{
+    border-color: #4ca7ed;
+    background-color: #55acee;
+}
+.btn-twitter.disabled:hover,
+.btn-twitter:disabled:hover
+{
+    border-color: #4ca7ed;
+    background-color: #55acee;
+}
+
+.btn-facebook
+{
+    color: #fff;
+    border-color: #385591;
+    background-color: #3b5998;
+}
+.btn-facebook:hover
+{
+    color: #fff;
+    border-color: #273b65;
+    background-color: #2d4373;
+}
+.btn-facebook:focus,
+.btn-facebook.focus
+{
+    color: #fff;
+    border-color: #273b65;
+    background-color: #2d4373;
+}
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .btn-facebook.dropdown-toggle
+{
+    color: #fff;
+    border-color: #273b65;
+    background-color: #2d4373;
+    background-image: none;
+}
+.btn-facebook:active:hover,
+.btn-facebook:active:focus,
+.btn-facebook:active.focus,
+.btn-facebook.active:hover,
+.btn-facebook.active:focus,
+.btn-facebook.active.focus,
+.open > .btn-facebook.dropdown-toggle:hover,
+.open > .btn-facebook.dropdown-toggle:focus,
+.open > .btn-facebook.dropdown-toggle.focus
+{
+    color: #fff;
+    border-color: #141f35;
+    background-color: #23345a;
+}
+.btn-facebook.disabled:focus,
+.btn-facebook.disabled.focus,
+.btn-facebook:disabled:focus,
+.btn-facebook:disabled.focus
+{
+    border-color: #385591;
+    background-color: #3b5998;
+}
+.btn-facebook.disabled:hover,
+.btn-facebook:disabled:hover
+{
+    border-color: #385591;
+    background-color: #3b5998;
+}
+
+.btn-hatebu
+{
+    color: #fff;
+    border-color: #1689d5;
+    background-color: #178fde;
+}
+.btn-hatebu:hover
+{
+    color: #fff;
+    border-color: #10659d;
+    background-color: #1271b0;
+}
+.btn-hatebu:focus,
+.btn-hatebu.focus
+{
+    color: #fff;
+    border-color: #10659d;
+    background-color: #1271b0;
+}
+.btn-hatebu:active,
+.btn-hatebu.active,
+.open > .btn-hatebu.dropdown-toggle
+{
+    color: #fff;
+    border-color: #10659d;
+    background-color: #1271b0;
+    background-image: none;
+}
+.btn-hatebu:active:hover,
+.btn-hatebu:active:focus,
+.btn-hatebu:active.focus,
+.btn-hatebu.active:hover,
+.btn-hatebu.active:focus,
+.btn-hatebu.active.focus,
+.open > .btn-hatebu.dropdown-toggle:hover,
+.open > .btn-hatebu.dropdown-toggle:focus,
+.open > .btn-hatebu.dropdown-toggle.focus
+{
+    color: #fff;
+    border-color: #0a3f61;
+    background-color: #0f5c8f;
+}
+.btn-hatebu.disabled:focus,
+.btn-hatebu.disabled.focus,
+.btn-hatebu:disabled:focus,
+.btn-hatebu:disabled.focus
+{
+    border-color: #1689d5;
+    background-color: #178fde;
+}
+.btn-hatebu.disabled:hover,
+.btn-hatebu:disabled:hover
+{
+    border-color: #1689d5;
+    background-color: #178fde;
+}
+
+.fa.fa-hatebu::before
+{
+    font-family: Verdana;
+    font-weight: bold;
+
+    content: 'B!';
+}
+
+body
+{
+    margin-top: 4.35rem;
+}
+
+.social-button
+{
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0 auto !important;
+    padding: 1rem 0;
+}
+.social-button > ul
+{
+    position: relative;
+    left: 50%;
+
+    float: left;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: outside none none;
+}
+.social-button > ul > li
+{
+    position: relative;
+    left: -50%;
+
+    float: left;
+
+    margin: 0 10px;
+    padding: 0;
+}
+.social-button > ul > li .fb-like > span
+{
+    vertical-align: 0 !important;
+}
+
+.social
+{
+    padding: .7rem 0;
+
+    background: #b4bcc2;
+}
+
+.jumbotron.special
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 530px;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    background-color: #add8ff;
+    background-image: url('../img/circle.png');
+    background-repeat: no-repeat;
+    background-position: -35% center;
+    background-size: 70%;
+}
+.jumbotron.special .honoka
+{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+    width: 400px;
+    height: 530px;
+
+    background-image: url('../img/umi.png');
+    background-repeat: no-repeat;
+}
+.jumbotron.special .outline
+{
+    margin-top: 180px;
+}
+.jumbotron.special h1,
+.jumbotron.special .h1
+{
+    font-family: Montserrat, sans-serif;
+}
+.jumbotron.special .download
+{
+    margin: 1.5rem auto .75rem;
+}
+.jumbotron.special .basedon
+{
+    margin: .75rem auto;
+
+    color: #95a5a6;
+    text-shadow: #fff 0 1px 2px;
+}
+
+section.section
+{
+    padding: 7rem 0;
+}
+section.section.section-default
+{
+    background-color: #fff;
+}
+section.section.section-inverse
+{
+    background-color: #fafcff;
+}
+section.section .subtitle
+{
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+}
+section.section .subtitle h2
+{
+    margin-top: 0;
+}
+
+.point .point-box
+{
+    text-align: center;
+}
+.point .point-box .point-circle
+{
+    font-size: 60px;
+    line-height: 100px;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    color: #fff;
+    border-radius: 100%;
+}
+.point .point-box .point-circle.start
+{
+    background-color: #18bc9c;
+}
+.point .point-box .point-circle.replace
+{
+    background-color: #f39c12;
+}
+.point .point-box .point-circle.compass
+{
+    background-color: #2c3e50;
+}
+.point .point-box .point-circle.japanese
+{
+    background-color: #e74c3c;
+}
+.point .point-box .point-circle.japanese span.icon-jp::before
+{
+    font-weight: bold;
+
+    content: 'あ';
+}
+.point .point-box .point-description h4
+{
+    margin-top: 1rem;
+
+    text-align: center;
+}
+.point .point-box .point-description p
+{
+    text-align: justify;
+}
+
+.getting-started h3
+{
+    margin-top: 0;
+}
+
+.japanese-font .well > h3
+{
+    margin-top: 1.5rem;
+}
+
+.available-bower
+{
+    position: relative;
+
+    overflow: hidden;
+}
+.available-bower .bower-logo
+{
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+
+    width: 300px;
+    height: 300px;
+
+    opacity: .3;
+    background-image: url('../img/bower-logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.featured .subtitle h2
+{
+    font-size: 1.75rem;
+}
+.featured ul.featured-list a
+{
+    opacity: .7;
+}
+.featured ul.featured-list a:hover,
+.featured ul.featured-list a:active,
+.featured ul.featured-list a:focus
+{
+    opacity: .5;
+}
+.featured ul.featured-list li
+{
+    padding: 1.4rem 3rem;
+}
+
+.thumbnail
+{
+    background: #fff;
+}
+.thumbnail > a:hover,
+.thumbnail > a:active,
+.thumbnail > a:focus
+{
+    opacity: .7;
+}
+
+footer
+{
+    padding: 2.8rem 0;
+
+    color: #b4bcc2;
+    background-color: #373a3c;
+}
+footer .copyright
+{
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+.bootstrap-default
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4285;
+}
+.bootstrap-default > h3
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <link href='./css/login.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link href="./css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body background="#">
+<link href="./css/login.css" rel="stylesheet" type="text/css">
+<div class="container">
+	<div class="row login_box">
+	    <div class="col-md-12 col-xs-12" align="center">
+<!--時間表示            <div class="line"><h3>12 : 30 AM</h3></div> -->
+            <div class="outter"><img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle"/></div>   
+            <h1>ようこそ</h1>
+            <span>なんか</span>
+	    </div>
+        
+        <div class="col-md-12 col-xs-12 login_control">
+            <from action="#"><!--ログイン後のリンク先指定-->
+                <div class="control">
+                    <div class="label">Email Address</div>
+                    <input type="text" placeholder="ゆい" class="form-control" value=""/>
+                </div>
+                
+                <div class="control">
+                     <div class="label">Password</div>
+                    <input type="password" placeholder="かおり" class="form-control" value=""/>
+                </div>
+                <div align="center">
+                     <button class="btn btn-orange">LOGIN</button>
+                </div>
+            </from>
+            <p style="text-align:right"> 
+                <a href="#" STYLE="text-decoration:blink"> <font color="black" >パスワードを忘れた場合</font></a>
+            </style>        
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#wrap {
+width:1280px;
+margin:0px auto;
+}
+
+header {
+border:dashed 1px #999;
+}
+
+#leftnavi {
+float:left;
+width:198px;
+height:498px;
+border:dashed 1px #999;
+margin:10px 10px 10px 0px;
+}
+
+#rightnavi {
+float:left;
+width:198px;
+height:498px;
+border:dashed 1px #999;
+margin:10px 0px 10px 10px;
+}
+
+#contents {
+float:left;
+width:870px;
+height:498px;
+border:dashed 1px #999;
+margin:10px 0px 10px 0px;
+}
+
+footer {
+clear:both;
+border:dashed 1px #999;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
