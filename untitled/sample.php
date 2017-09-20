@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect('localhost','testuser','testuser');
+$link = mysqli_connect('localhost','root','root');
 if($link) {
     die('接続失敗です');
 }

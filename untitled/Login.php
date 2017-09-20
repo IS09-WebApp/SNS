@@ -5,8 +5,8 @@ $db['host'] = "localhost"; //DBのサーバーURL
 $db['user'] = "root";
 $db['pass'] = "";
 $db['dbname'] = "db1";
-   // $link = mysqli_connect('localhost','root','');
-    $erroMessage = "";//エラーメッセージの初期化
+    $errorMessage = "";//エラーメッセージの初期化
+
 
     if(isset($_POST["login"])){         //ログインボタンが押された場合
         if (empty($_POST["id"])){       //emptyは値が空の時
@@ -62,7 +62,7 @@ $db['dbname'] = "db1";
 <html>
     <head>
             <meta charset="UTF-8">
-        <title>ログイン</title>>
+        <title>ログイン</title>
     </head>
 <body>
 <h1>ログイン画面</h1>
