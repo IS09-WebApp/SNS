@@ -34,21 +34,21 @@ CREATE TABLE post_contents(/*投稿内容*/
 	contents TEXT,/*投稿内容*/
 	picture BLOB,/*投稿画像*/
 	posttime DATETIME,/*登校時間*/
-	rogin_id VARCHAR(32),/*ログインID*/
-	FOREIGN KEY(rogin_id) REFERENCES user_detail(id));
+	login_id VARCHAR(32),/*ログインID*/
+	FOREIGN KEY(login_id) REFERENCES user_detail(id));
 
 CREATE TABLE info(/*お知らせ*/
 	id INT(32) PRIMARY KEY,/*記事ID*/
-	rogin_id VARCHAR(32),/*ログインID*/
+	login_id VARCHAR(32),/*ログインID*/
 	posttime DATETIME,/*投稿日時*/
 	article TEXT,/*記事内容*/
-	FOREIGN KEY(rogin_id) REFERENCES user_detail(id));
+	FOREIGN KEY(login_id) REFERENCES user_detail(id));
 
 CREATE TABLE comment(/*コメント内容*/
 	id VARCHAR(16) PRIMARY KEY,/*コメントID*/
 	contents TEXT NOT NULL,/*コメント内容*/
-	rogin_id VARCHAR(32),/*ログインID*/
-	FOREIGN KEY(rogin_id) REFERENCES user_detail(id));
+	login_id VARCHAR(32),/*ログインID*/
+	FOREIGN KEY(login_id) REFERENCES user_detail(id));
 
 CREATE TABLE post_list(/*投稿一覧*/
 	group_id VARCHAR(8) PRIMARY KEY,/*グループID*/
@@ -56,7 +56,7 @@ CREATE TABLE post_list(/*投稿一覧*/
 	FOREIGN KEY(group_id) REFERENCES group_detail(id),
 	FOREIGN KEY(post_id) REFERENCES post_contents(id));
 
-CREATE TABLE user_rogin(/*ユーザ*/
+CREATE TABLE user_login(/*ユーザ*/
 	id VARCHAR(32) PRIMARY KEY,/*ログインID*/
 	pass VARCHAR(32) NOT NULL,/*パスワード*/
 	grand ENUM('0','1'),/*マスターフラグ(0=学生)*/
