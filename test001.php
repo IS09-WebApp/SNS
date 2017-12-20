@@ -33,8 +33,8 @@ try{        //--------------↓DB接続処理↓---------------
     echo "<tbody>";
     foreach ($result as $row){
         echo "<tr>";
-        echo "<td>", es($row['id']),"</td>";
-        echo "<td>", es($row['name']),"</td>";
+        echo "<td>", $row['id'],"</td>";
+        echo "<td>", $row['name'],"</td>";
         echo "</tr>";
     }
     echo "</tbody>";
